@@ -1,0 +1,201 @@
+<!-- ! + tab : Crear HTML TEPMLATE -->
+<!-- CTRL + SHIFF + A : COMENTAR -->
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <head>
+        <title>Mi Blog</title>
+        <style>
+            table, td, th {
+                border:1px solid black;
+            }
+            div{
+                background-color: red;
+            }
+            
+            h1 {
+                color: red;
+            }
+
+            .primerh1{
+               background-color: purple;
+            }
+            .segundoh1{
+            background-color: tomato;
+            }
+            #primerh2 {
+                background-color: blue;
+            }
+            .absolute {
+                position: absolute;
+                top:100px;
+                left:10px;
+                right:10px;
+                bottom: 10px;
+            }
+            .fixed {
+                position: fixed;
+                top:100px;
+                left:10px;
+                right:10px;
+                bottom: 10px;
+            }
+            .padre {
+                background-color: blue;
+                padding:10px;
+            }
+            .hijo {
+                display:flex;
+                background-color: yellow;
+                width: 400px;
+                height: 400px;
+                margin:10px;
+                padding: 10px;
+                border-radius: 50%;
+            }
+
+
+            
+        </style>
+    </head>
+    <!-- <esta-es-una-etiqueta style="propiedad">contenido</esta-es-una-etiqueta> -->
+    <body >
+        <main style="min-height:3000px;">
+            <div class="padre" >
+                <div class="hijo">
+                    <h1>HIJO</h1>
+                </div>
+            </div>
+            <br><br>
+            <!-- <div class="absolute">div 2</div> -->
+            <br><br>
+            <!-- <div class="fixed">div 2</div> -->
+            <br><br>
+            <div>div 3</div>
+            <br><br>
+            <section>
+                <h1 class="primerh1">Mi título</h1>
+                <article>
+                    <h2 id="primerh2" >Mi título</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quia, autem laborum cupiditate fuga temporibus cumque tenetur ratione illum reprehenderit voluptate eveniet tempore voluptates commodi quisquam pariatur mollitia et quod?</p>
+                    <h3>Mi título</h3>
+                    <ul>
+                        <li>
+                            item 1
+                        </li>
+                        <li>
+                            item 1
+                        </li>
+                        <li>
+                            item 1
+                        </li>
+                    </ul>
+                    <ol>
+                        <li>
+                            item 1
+                        </li>
+                        <li>
+                            item 1
+                        </li>
+                        <li>
+                            <ol>
+                                <li style="list-style-type: lower-roman;">
+                                    item 1
+                                </li>
+                                <li style="list-style-type: lower-roman;">
+                                    item 1
+                                </li>
+                                <li style="list-style-type: lower-roman;">
+                                    item 1
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <h4>Mi título</h4>
+                    <h5>Mi título</h5>
+                    <h6>Mi título</h6>
+                </article>
+            </section>
+            <br><br><br>
+            <section>
+                <a target="_self" href="https://www.google.cl"> IR A GOOGLE </a>
+                <br><br>
+                <a target="_blank" href="https://www.google.cl"> IR A GOOGLE </a>
+            </section>
+            <br><br>
+            <!-- <section>
+                <img src="images/image1.jpg" width="1000" height="1000"/>
+                <br><br>
+                <img src="images/image1.jpg" width="200" height="400"/>
+            </section> -->
+            <br><br>
+            <section>
+                <h1 class="segundoh1">FORMULRIO</h1>
+                <form action="/backend" method="POST">
+                    <label for="name">
+                        Nombre<br><br>
+                    </label>
+                    <input value="MAX" autocomplete="off" id="name" name="name" placeholder="ingresa tu nombre" type="text"/>
+                    <br><br>
+                    <label for="name">
+                    Edad
+                    </label>
+                    <br>
+                    <br>
+                    <br>
+                    <input id="edad" name="edad" placeholder="ingresa tu edad" type="number"/>
+                    <br> 
+                    <br>
+                    <br>
+                    <label for="es-simpatico">Es simpático</label>
+                    <input id="es-simpatico" name="es-simpatico" required="true"  type="checkbox"/>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="comentario">Comentario</label>
+                    <br><br>
+                    <textarea >
+                        Esté es un comentario
+                    </textarea>
+                    <br>
+                    <input type="submit">
+                </form>
+            </section>
+            <br><br>
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>producto</th>
+                            <th>cantidad</th>
+                            <th>valor</th>
+                        </tr>    
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>bebida</td>
+                            <td>1</td>
+                            <td>1000</td>
+                        </tr>   
+                        <tr>
+                            <td>cerveza</td>
+                            <td>2</td>
+                            <td>2000</td>
+                        </tr>    
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total</td>
+                            <td>3000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>    
+    </body>
+    <footer>
+        max@20023
+    </footer>
+</html>
+
